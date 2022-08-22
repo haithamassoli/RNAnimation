@@ -9,6 +9,7 @@ import HoverScreen from "@Screens/Hover/Hover";
 import ImageFilterScreen from "@Screens/ImageFilter/ImageFilter";
 import PhoneRingScreen from "@Screens/PhoneRing/PhoneRing";
 import ReactLogoScreen from "@Screens/ReactLogo/ReactLogo";
+import CircularProgressScreen from "@Screens/CircularProgress";
 const Drawer = createDrawerNavigator();
 
 function Route() {
@@ -24,6 +25,10 @@ function Route() {
         <Drawer.Screen name="ImageFilter" component={ImageFilterScreen} />
         <Drawer.Screen name="PhoneRing" component={PhoneRingScreen} />
         <Drawer.Screen name="ReactLogo" component={ReactLogoScreen} />
+        <Drawer.Screen
+          name="CircularProgress"
+          component={CircularProgressScreen}
+        />
       </Drawer.Navigator>
     </NavigationContainer>
   );
